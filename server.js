@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
     res.send(`
@@ -93,4 +93,5 @@ app.get('/proxy', async (req, res) => {
 
 app.listen(PORT, () => {
     console.log("Waizender Proxy is live at http://localhost:3000");
+
 });
