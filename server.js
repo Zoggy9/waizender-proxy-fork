@@ -91,7 +91,8 @@ app.get('/proxy', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log("Waizender Proxy is live at http://localhost:3000");
+const PORT = process.env.PORT || 3000;
 
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Waizender Proxy is live!`);
 });
