@@ -50,20 +50,3 @@ app.get('/proxy', async (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server is running on port ${PORT}`);
 });
-2. The "Railway-Proof" package.json
-Double-check your package.json on GitHub. It must look exactly like this:
-
-JSON
-
-{
-  "name": "waizender-proxy",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2",
-    "axios": "^1.6.0"
-  }
-}
