@@ -1,5 +1,5 @@
 {
-  "name": "waizender-proxy",
+  "name": "waizender",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -10,3 +10,4 @@
     "axios": "^1.6.0"
   }
 }
+
