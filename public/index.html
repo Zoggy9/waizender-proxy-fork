@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal | Course Content</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f9; color: #334155; margin: 0; }
+        nav { background: #1e293b; color: white; padding: 15px 30px; display: flex; justify-content: space-between; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 12px; border: 1px solid #e2e8f0; }
+        h1 { color: #0f172a; border-bottom: 2px solid #2563eb; padding-bottom: 10px; }
+        .alert { background: #fef2f2; border-left: 4px solid #ef4444; padding: 15px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <nav><strong>EduPortal LMS</strong> <div>Dashboard | Grades | Help</div></nav>
+    <div class="container">
+        <h1>Module 3.2: The Calvin Cycle</h1>
+        <p>The Calvin cycle is the process in which plants and other autotrophs use energy from sunlight to produce chemical energy.</p>
+        <div class="alert"><strong>Note:</strong> Final Exam review is scheduled for next Tuesday.</div>
+        <h3>Learning Objectives</h3>
+        <ul>
+            <li>Carbon Fixation and RuBisCO role.</li>
+            <li>Reduction of 3-PGA.</li>
+            <li>Regeneration of RuBP.</li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('keydown', (e) => {
+            if (e.key === '`') window.location.href = '/dashboard';
+            if (e.key === 'Escape') window.location.href = 'https://google.com';
+        });
+    </script>
+</body>
+</html>
